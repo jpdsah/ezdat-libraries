@@ -12,7 +12,7 @@ java {
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = "com.ezdat.core"
+            groupId = "com.ezdat.library"
             artifactId = "core"
             version = "1.0.0"
 
