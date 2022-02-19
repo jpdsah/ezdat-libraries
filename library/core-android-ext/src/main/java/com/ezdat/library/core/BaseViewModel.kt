@@ -27,10 +27,14 @@ abstract class BaseViewModel : ViewModel() {
     }
 
 
-    protected open fun sendCommand(command: ViewCommand) {
+    protected fun sendCommand(command: ViewCommand) {
         viewModelScope.launch {
             _commandObservable.emit(command)
         }
+    }
+
+    protected suspend fun suspendedSendCommand(command: ViewCommand) {
+        _commandObservable.emit(command)
     }
 
     fun reprocessLastInteraction() {
