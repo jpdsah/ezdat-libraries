@@ -14,3 +14,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Ezdat Libraries"
 include(":library:core")
+include(":library:core-android-ext")
