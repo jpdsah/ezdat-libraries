@@ -5,8 +5,8 @@ plugins {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_7
-    targetCompatibility = JavaVersion.VERSION_1_7
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
 }
 
 publishing {
@@ -14,7 +14,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "com.ezdat.library"
             artifactId = "core"
-            version = "1.0.0"
+            version = "1.0.1"
 
             from(components["java"])
         }
