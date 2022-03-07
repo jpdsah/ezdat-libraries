@@ -7,6 +7,6 @@ sealed class ComponentState<out T> {
         object FromData : Loading()
     }
 
-    data class Error(val error: com.ezdat.library.core.Error) : ComponentState<Nothing>()
+    data class Error(val error: Throwable) : ComponentState<Nothing>()
     data class Success<T>(val data: T) : ComponentState<T>()
 }

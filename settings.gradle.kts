@@ -15,3 +15,7 @@ dependencyResolutionManagement {
 rootProject.name = "Ezdat Libraries"
 include(":library:core")
 include(":library:core-android-ext")
+include(":library:core-android")
+include(":library:databinding")
+include(":library:view-ktx")
+include(":library:core-networking")
